@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="TitleSection">
+        <h1>Welcome to the Cookie Clicker!</h1>
+        <h3>Version 1.0 created by Richard Mena</h3>
+      </section>
+      <p>Cookie Clicked: <span id="score">0</span></p>
+      <img
+        src="images/cookie.webp"
+        alt="cookie"
+        class="cookie"
+        style="width: 35vw"
+        onclick="addToScore(1)"
+      />
+      <button class="upgrade" onclick="upgradeCursor()">
+        Cursor Upgrade = Costs <span id="cursorCost">15</span> Clicks --
+        <span id="cursors">0</span>
+      </button>
+      <button id="reset" onclick="window.location.reload(true)">Reset</button>
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
